@@ -1,4 +1,23 @@
 body{
     width: 800px;
-    background: #6e0427 url('../images/body_bg.gif') repeat-x top;
+    background: hsl(351, 94%, 32%) url('../images/body_bg.gif') repeat-x top;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    color: antiquewhite;
+    margin: 0px auto;
+    margin-top: 50px;
+    padding: 50px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+#nav{
+    float: right;
+}
+#nav li{
+    display: inline;
+    margin: 0;
+    color: aliceblue;
 }
