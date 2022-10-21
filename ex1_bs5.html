@@ -1,26 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Red Lantern Design</title>
+    <link rel="stylesheet" href="css/ex1_bs5.css">
+<!-- Latest compiled and minified CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 </head>
-<link rel="stylesheet" href="css/ex1.css">
+
 <body>
-    <header>
-        <img src="images\rl_logo.png" alt="">        
-    <ul id="nav">
-        <li><a href="ex1.html">Home</a></li>
-        <li><a href="#content">Services</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
+
+<header id="masthead" class="container">
+    <img class="float-start" src="images\rl_logo.png" alt="">
+    <nav class="navbar navbar-expand-md float-end mt-4">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"><span class="bi bi-x-diamond "></span></button>
+        <div id="menu" class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link text-white" href="ex1.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#content">Services</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="portfolio.html" target="_blank">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 </header>
-<article id="mainContent">
+<article id="mainContent" class="container">
     <section id="titleBar">
-        <img src="images/tokyo.jpg" alt="tokyo building" >
-        <h2>Red Lantern Lorem ipsum dolor sit amet.</h2>
+        <img class="w-100" src="images/tokyo.jpg" alt="Tokyo building">
+        <h1>Red Lantern </h1>
     </section>
     <section id="content">
         <h2>Welcome to the new Red Lantern Design</h2>
