@@ -10,14 +10,24 @@
 </head>
 <body>
     <div id="app">
-        <h1>{{message}}</h1>
+        <ol>
+            <!-- <li>Learn HTML</li>
+            <li>Learn CSS</li>
+            <li>Learn Bootstrap</li> -->
+            <li v-for="item in todos">{{item.task}}</li>
+        </ol>
     </div>
 </body>
 <script>
     var myObj = new Vue(
         {
             el: "#app",
-            data: {message: "Hello Vue!"}
+            data: {todos: [
+                {task: "Learn HTML"},
+                {task: "Learn CSS"},
+                {task: "Learn Bootstrap"},
+                {task: "Learn Vue.js"}
+            ]}
         }
     )
 </script>
