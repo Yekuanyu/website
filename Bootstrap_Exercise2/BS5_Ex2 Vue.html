@@ -580,14 +580,13 @@
             var portfolioVue = new Vue({
                 el: "#portfolio",
                 data:{
-                    Portfolio:[
-                        {href: "#portfolioModal1", imgSrc: "img/portfolio/roundicons.png", title: "Round Icons", subtitle: "Graphic Design"},
-                        {href: "#portfolioModal2", imgSrc: "img/portfolio/startup-framework.png", title: "Startup Framework", subtitle: "Website Design"},
-                        {href: "#portfolioModal3", imgSrc: "img/portfolio/treehouse.png", title: "Treehouse", subtitle: "Website Design"},
-                        {href: "#portfolioModal4", imgSrc: "img/portfolio/golden.png", title: "Golden", subtitle: "Website Design"},
-                        {href: "#portfolioModal5", imgSrc: "img/portfolio/escape.png", title: "Escape", subtitle: "Website Design"},
-                        {href: "#portfolioModal6", imgSrc: "img/portfolio/dreams.png", title: "Dreams", subtitle: "Website Design"}
-                    ]
+                    Portfolio:[]
+                }
+            })
+
+            $.get("/portfolio", function(data, status){
+                if(status=="success"){
+                    portfolioVue.Portfolio=data;
                 }
             })
     </script>
